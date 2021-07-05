@@ -1,0 +1,37 @@
+{% include "header.html" %}
+ <head>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Vibur&display=swap" rel="stylesheet">
+  </head>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{post.image_url}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1 style="font-family: 'Jua', sans-serif;">{{post.title}}</h1>
+            <h2 class="subheading" style="font-family: 'Comfortaa', cursive;">{{post.subtitle}}</h2>
+            <span class="meta">Posted by
+              <a href="#" style="color: #fecd1a; text-decoration: none; font-family: 'Vibur', cursive; font-size: 25px;">{{post.author}} </a>
+              on <span style="font-family: 'Vibur', cursive; color: #FB9300; font-size: 20px;">{{post.date}}</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p style="font-family: 'Patrick Hand', cursive;">
+            {{post.body}}
+          </p>
+          </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+{% include "footer.html" %}

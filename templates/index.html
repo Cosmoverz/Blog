@@ -1,0 +1,69 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/img/bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1 style="color: #FD3A69; font-family: 'Balsamiq Sans', cursive;">Cooli's Blog</h1>
+            <span class="subheading" style="color: #ff7567; font-family: 'Otomanopee One', sans-serif; font-size: 28px;">A fine sparking collection of Cooli's posts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<style>
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.text-link {
+    text-decoration: none;
+}
+
+.post-link {
+    color: #fecd1a;
+    text-decoration: none;
+}
+</style>
+
+  <!-- Main Content -->
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% for post in all_posts %}
+        <div class="post-preview">
+          <a class="text-link" href="{{ url_for('show_post', index=post.id) }}">
+            <h2 class="post-title" style="font-family: 'Jua', sans-serif;">
+              {{post.title}}
+            </h2>
+            <h3 class="post-subtitle" style="font-family: 'Comfortaa', cursive;">
+              {{post.subtitle}}
+            </h3>
+          </a>
+          <p class="post-meta" style="font-family: 'Quicksand', sans-serif;">Posted by
+            <a class="post-link" href="#" style="color: #fecd1a; text-decoration: none; font-family: 'Vibur', cursive; font-size: 25px;">{{post.author}} </a>
+            on <span style="font-family: 'Vibur', cursive; color: #FB9300; font-size: 20px;">{{post.date}}</span></p>
+        </div>
+        <hr>
+        {% endfor %}
+
+
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-warning btn-lg float-left disabled" href="#" style="font-family: 'Indie Flower', cursive; border-radius: 20px;"><i class="fas fa-chevron-up"></i><br>Older Posts<br></a>
+          <a class="btn btn-warning btn-lg float-right disabled" href="#" style="font-family: 'Indie Flower', cursive; border-radius: 20px;">Newer Posts<br><i class="fas fa-chevron-down"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+{% include "footer.html" %}
