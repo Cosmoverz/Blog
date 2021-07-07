@@ -1,6 +1,21 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+<style>
+ * {
+       font-family: "Jua", sans-serif;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: #FD3A69;
+ }
+</style>
+
 # Description
 
-A very cool blog website that get it's data from [npoint.io](https://www.npoint.io/)
+> A very cool blog website that get it's data from [npoint.io](https://www.npoint.io/)
 
 ---
 
@@ -19,6 +34,7 @@ Install all the packages imported from main.py to work
 # Credits
 
 - [Start Bootstrap](https://startbootstrap.com/)
+
 - [Toptal Gitignore Generator](https://gitignore.io/)
 
 ---
