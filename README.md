@@ -10,15 +10,23 @@ Install all the packages imported from main.py to work
 
 ---
 
-# Current Look
+# Current Look
 
-<iframe src="https://cooli-blog.herokuapp.com/" width="100%" height="1000" style="border:none;">
+![Screenshotfrom20210707125931](https://i.ibb.co/7VCV9RL/Screenshot-from-2021-07-07-12-59-31.png)
 
 ---
 
 # Credits
 
 - [Start Bootstrap](https://startbootstrap.com/)
-- [Font Awesome](https://fontawesome.com/)
 - [Toptal Gitignore Generator](https://gitignore.io/)
-- [Heroku](http://heroku.com/)
+
+---
+
+# Resources
+
+- [npoint.io](https://npoint.io)
+  
+- [Font Awesome](https://fontawesome.com/)
+  
+- [Heroku](https://heroku.com/)
